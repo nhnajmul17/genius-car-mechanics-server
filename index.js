@@ -72,6 +72,9 @@ app.get('/', (req, res) => {
     res.send('This is Genius Server Side')
 })
 
+app.get('/hello', (req, res) => {
+    console.log('hello updated here');
+})
 app.listen(port, () => {
     console.log('Listening port:', port);
 })
